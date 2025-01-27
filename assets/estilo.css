@@ -14,10 +14,12 @@
 
 
 body {
+
     font-family: arial;
     background-color: var(--fondoPagina);
     color: var(--colorLetra);
     font-size: var(--tamañoLetra);
+    
 }
 
 
@@ -36,6 +38,9 @@ body {
     margin: 20px 0px 0px 0px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    height: 100vh;
+    z-index: 1;
+
 }
 
 .nav_contenedor_row {
@@ -54,7 +59,8 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-row: 2;
     grid-column: 2/11;
-    height: 70vh;
+    margin:90px 0px 300px 0px;
+   
 
 }
 
@@ -171,7 +177,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-row: 3;
     grid-column: 1/13;
-    background-color: #2222ab;
+    background-color: #19191a;
     z-index: 2;
 }
 
@@ -321,8 +327,10 @@ body {
 }
 
 @media (max-width:1080px) {
-    .nav_contenedor_row {
+
     
+    .nav_contenedor_row {
+
         grid-column: 1/13;
 
 
@@ -334,7 +342,7 @@ body {
 
 
     .nav_contenedor_row {
-        margin: 12px 0px 0px 30px;
+        margin: 12px 0px 0px 0px;
 
     }
 
